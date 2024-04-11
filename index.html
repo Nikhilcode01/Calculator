@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title> Web Calculator </title>
+	<script src="./script.js"></script>
+	<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+	<div class="main">
+		<h1>My Calaulator</h1>
+		<input type="text" id="dis" name="dis" placeholder="0" readonly>
+		<table>
+			<tr>
+				<td><input type="button" value="+" id="a" name="a" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="-" id="s" name="s" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="*" id="m" name="m" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="※" id="cs" name="cs" class="td" onclick="clr()"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" id="but7" name="but7" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="8" id="but8" name="but8" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="9" id="but9" name="but9" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="/" id="d" name="d" class="td" onclick="setValue(this)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" id="but4" name="but4" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="5" id="but5" name="but5" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="6" id="but6" name="but6" class="td" onclick="setValue(this)"></td>
+				<td rowspan="4"><input type="button" value="=" id="e" name="e" class="td" onclick="calculator()"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" id="but1" name="but1" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="2" id="but2" name="but2" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="3" id="but3" name="but3" class="td" onclick="setValue(this)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="⫷" id="del" name="del" class="td" onclick="del()"></td>
+				<td><input type="button" value="." id="dot" name="dot" class="td" onclick="setValue(this)"></td>
+				<td><input type="button" value="0" id="z" name="z" class="td" onclick="setValue(this)"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
